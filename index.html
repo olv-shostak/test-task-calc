@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="form">
+        <div class="flex-container">
+          <div>
+            <label for="number1" class="label-inp">Enter the first number:</label>
+            <input id="number1" class="input-num" placeholder="0"/>
+            <label for="number2" class="label-inp">Enter the second number:</label>
+            <input id="number2" class="input-num" placeholder="0"/>
+            <label class="label-checkbox">
+                <input type="checkbox" id="checkbox" name="round" value="round" checked />
+                Round up the result
+          </div>
+        
+          <div id="operators" class="operators">
+            <button id="plus" class="button-op" onclick="a='+'">+</button>
+            <button id="minus" class="button-op" onclick="a='-'">-</button>
+            <button id="multiply" class="button-op" onclick="a='*'">x</button>
+            <button id="divide" class="button-op"onclick="a='/'">:</button>
+          </div>
+        </div>
+      
+          <button type="submit" class="submit" onclick="func()">Result</button>
+          <p id="result" class="result"></p>
+      </div>
+      
+      <script src="./index.js"></script>
+</body>
+</html>
+  
